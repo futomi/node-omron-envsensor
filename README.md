@@ -178,7 +178,7 @@ The sample code above will output the result as follows:
 
 ```javascript
 {
-  "rowSeq": 0,
+  "row": 0,
   "temperature": 31.41,
   "humidity": 40.67,
   "ambientLight": 140,
