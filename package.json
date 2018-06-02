@@ -1,0 +1,44 @@
+{
+  "name": "node-omron-envsensor",
+  "version": "0.0.1",
+  "description": "The node-omron-envsensor is a Node.js module which allows you to communicate with the OMRON Environment Sensor (2JCIE-BL01).",
+  "main": "./lib/envsensor.js",
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OMRON",
+    "2JCIE-BL01",
+    "sensor",
+    "temperature",
+    "humidity",
+    "ambient",
+    "pressure",
+    "accelerometer",
+    "magnetometer",
+    "noise",
+    "BLE",
+    "Bluetooth Low Energy",
+    "Bluetooth smart",
+    "Bluetooth",
+    "IoT",
+    "Internet of Things"
+  ],
+  "homepage": "https://github.com/futomi",
+  "author": "Futomi Hatano <futomi.hatano@gmail.com> (https://github.com/futomi)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futomi/node-omron-envsensor.git"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "noble": ">=1.9.1"
+  }
+}
