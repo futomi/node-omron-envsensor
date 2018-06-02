@@ -77,7 +77,7 @@ The code below discovers a device, establishes a connection with the device, the
 
 ```JavaScript
 // Load the node-omron-envsensor and get a `Envsensor` constructor object
-const Envsensor = require('../lib/envsensor.js');
+const Envsensor = require('node-omron-envsensor');
 // Create an `Envsensor` object
 const envsensor = new Envsensor();
 // `EnvsensorDevice` object
