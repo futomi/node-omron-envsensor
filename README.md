@@ -12,17 +12,20 @@ The node-omron-envsensor supports only Linux-based OSes, such as Raspbian, Ubunt
 ## Dependencies
 
 * [Node.js](https://nodejs.org/en/) 6 +
-* [noble](https://github.com/noble/noble)
+* [@abandonware/noble](https://github.com/abandonware/noble)
 
-See the document of the [noble](https://github.com/noble/noble) for details on installing the [noble](https://github.com/noble/noble).
 
-Note that the noble has to be run as root on most of Linux environments. Noarmal users can not access the BLE using the noble generally. See the document of the [noble](https://github.com/noble/noble) for details.
+See the document of the [@abandonware/noble](https://github.com/abandonware/noble) for details on installing the [@abandonware/noble](https://github.com/abandonware/noble).
+
+Note that the noble has to be run as root on most of Linux environments. See the the document of the [@abandonware/noble](https://github.com/abandonware/noble) for details.
+
+The early versions of this module depended on [noble](https://github.com/sandeepmistry/noble) for BLE handling. But the [noble](https://github.com/sandeepmistry/noble) seems not to support Node v10 or later versions. Now, this module is employing [@abandonware/noble](https://github.com/abandonware/noble), which was forked from [noble](https://github.com/sandeepmistry/noble). For the purouse of the backward compatibility, this module works with [noble](https://github.com/sandeepmistry/noble) on Node v8 or earlier versions.
 
 ## Installation
 
 ```
 $ cd ~
-$ npm install noble
+$ npm install @abandonware/noble
 $ npm install node-omron-envsensor
 ```
 
@@ -1144,6 +1147,8 @@ Using the low-level APIs, you can access most of the BLE characteristic implemen
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.1.0 (2019-10-24)
+  * Supported Node v8 or later versions thanks to [@abandonware/noble](https://github.com/abandonware/noble)
 * v0.0.1 (2018-06-02)
   * First public release
 
@@ -1160,7 +1165,7 @@ Using the low-level APIs, you can access most of the BLE characteristic implemen
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Futomi Hatano
+Copyright (c) 2018-2019 Futomi Hatano
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
